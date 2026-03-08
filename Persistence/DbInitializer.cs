@@ -141,6 +141,8 @@ public class DbInitializer
             }
         };
 
+        Context.Activities.AddRange(activities);
 
+        await Context.SaveChangesAsync();
     }
 }
